@@ -5,10 +5,19 @@ public class Student {
 	private int id;
 	private String name;
 	private String city;
+	private double percentage;
 	
+	public double getPercentage() {
+		return percentage;
+	}
+
+	public void setPercentage(double percentage) {
+		this.percentage = percentage;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", city=" + city + "]";
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + "]";
 	}
 
 	public int getId() {
