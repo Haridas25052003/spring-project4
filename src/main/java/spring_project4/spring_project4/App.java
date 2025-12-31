@@ -18,7 +18,12 @@ public class App
         ApplicationContext context=new AnnotationConfigApplicationContext(MyConfiguration.class);
         StudentDao sd=context.getBean(StudentDao.class);
         
-       
+        Student s=new Student();
+        
+        s.setName("David Warner");
+        s.setCity("Austrelia");
+        s.setPercentage(95.50);
+        System.out.println(sd.insertStduent(s));
         
         
     }
